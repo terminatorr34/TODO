@@ -20,7 +20,7 @@ $bounceLimit: 50%;
     flex-direction: column;
     align-items: center;
     max-width: 1500px;
-    height: auto;
+    min-height: 1000px;
     background: linear-gradient(115.67deg, #f3dbe5 7.14%, #b3d0ef 99.42%);
 }
 
@@ -92,6 +92,7 @@ li {
     }
 
     li {
+        
         overflow-wrap: break-word;
         position: relative;
         font-family: 'Montserrat';
@@ -347,6 +348,7 @@ li {
 }
 
 .removed-from-todo {
+    border-radius: 5px;
     text-decoration: line-through;
     position: relative;
     // min-width: 100%;
