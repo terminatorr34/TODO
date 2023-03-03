@@ -1,0 +1,34 @@
+@import "null.scss";
+@import "todolist.scss";
+// @import "media480.scss";
+
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+@mixin fontSizeWeightColorLH($fs, $fw, $c, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+}
+
+// $c:rgb(61, 49, 70);
+
+
+.container {
+    padding: 25px 30px;
+    margin: 15px;
+    display: flex;
+    max-width: 768px;
+    height: 500px;
+    background-color: lightgray;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(229, 235, 238, 1) 2%, rgba(229, 235, 238, 0.71) 27%, rgba(229, 235, 238, 0.71) 38%, rgba(215, 222, 227, 0.71) 69%, rgba(245, 247, 249, 0.71) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(229, 235, 238, 1) 2%, rgba(229, 235, 238, 0.71) 27%, rgba(229, 235, 238, 0.71) 38%, rgba(215, 222, 227, 0.71) 69%, rgba(245, 247, 249, 0.71) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(229, 235, 238, 1) 2%, rgba(229, 235, 238, 0.71) 27%, rgba(229, 235, 238, 0.71) 38%, rgba(215, 222, 227, 0.71) 69%, rgba(245, 247, 249, 0.71) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 1px 1px 15px rgb(61, 49, 70), -1px -1px 10px rgb(121, 243, 241);
+    border-radius: 5px;
+}

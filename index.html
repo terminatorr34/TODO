@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-todo">
+        <div class="todo-body">
+            <div class="todo-body-informingTitle">You've got &nbsp<span class="taksnumber"></span> <br> <span
+                    class="date"> </span> </div>
+            <div class="result-panel">
+                <!-- <div items-left><span class="quatity-items-left">3</span><span>items left</span></div> -->
+                
+                <button name="all" class="all-button">all</button>
+                <button name="active" class="active-button">active</button>
+                <button name="implemented" class="implemented-button">done</button>
+                <button name="clear" class="clear-button">clear</button>
+            </div>
+            <form action="" name="todo" class="todoform">
+                <input type="text" name="add-todo" placeholder="add todo">
+                <input type="submit" name="submit-todo" placeholder="OK">
+
+            </form>
+
+            <div class="pending">
+               
+                <ul class="pending1">
+                    
+                </ul>
+                <div class="implemented-todos">
+                    <ul class="implementedUl">
+
+                    </ul>
+
+                    <div class="removed-todos"> <b>removed</b>
+                        <ul>
+                    
+                        </ul>
+                    </div>
+
+                </div>
+                <ul class="pending2" style="background-color: rgb(236, 176, 176);">
+                    <!-- <li> the first</li>
+                    <li> the second</li> -->
+                </ul>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <script async src="/JS/todos.JS"> </script>
+</body>
+
+</html>
